@@ -6,4 +6,4 @@ LEFT JOIN team AS t
 on p.team_id=t.id
 WHERE dayofweek(p.enrollment_date) = 2
 AND t.name='Gryffindor'
-ORDER BY enrollment_date;
+ORDER BY enrollment_date ASC;
